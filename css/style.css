@@ -1,0 +1,460 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    perspective: 700px;
+}
+ .sc1{
+    width: 100%;
+    height: 100vh;
+ }
+.container{
+    width: 80%;
+    height: 60vh;
+    margin: auto;
+    margin-top: 70px;
+    background: -webkit-linear-gradient(top,white,rgb(34, 103, 16));
+    display: flex;
+}
+.header{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 150px;
+    position: relative;
+}
+.logo{
+    height: 100px;
+    margin:40px 120px;
+}
+.table{
+    position: relative;
+    position: absolute;
+    visibility: hidden;
+}
+.table1 td{
+    width: 100px;
+    font-size: 8px;
+    padding: 2px 2px;
+}
+td{
+    width: 100px;
+    line-height: 10px;
+    padding: 0px 3px;
+    font-size: 8px;
+}
+.pr{
+    position: absolute;
+    font-size: 5px;
+    color: black;
+    margin: 10px 3px;
+}
+.rr{
+    margin: 10px 55px;
+}
+.rrr{
+    margin: 10px 108px;
+}
+.li1:hover .table{
+    position: absolute;
+    width: 160px;
+    height: 60px;
+    border: 1px solid rgb(34, 103, 16);
+    background: -webkit-linear-gradient(top,white,rgb(91, 132, 81));
+    margin: 80px 145px;
+    transform: scale(3,3);
+    transition: .5s;
+    visibility: visible;
+}
+.ul1{
+    display: flex;
+    margin-left: -120px;
+}
+.ul1 li{
+    position: relative;
+    list-style: none;
+    margin:90px 10px;
+    font-size: 20px;
+    color:rgb(34, 103, 16);
+    height: 50px;
+    padding: 15px 15px;
+    cursor: pointer;
+    display: inline-block;
+    transition: .2s;
+}
+.ee li::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgb(34, 103, 16);
+    border-left: transparent;
+    border-right: transparent;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: .3s;
+}
+.ee li:hover::after{
+    transform: scaleX(1);
+}
+.ee li::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgb(34, 103, 16);
+    border-top: transparent;
+    border-bottom: transparent;
+    transform: scaleY(0);
+    transform-origin: left;
+    transition: .3s;
+}
+.ee li:hover::before{
+    transform: scaleY(1);
+}
+.header i{
+    margin: 100px 10px;
+    font-size: 25px;
+    color: rgb(95, 91, 21);
+}
+.i1{
+    margin-left: 30px;
+}
+.p2,.p1{
+    margin:105px 2px;
+    font-size: 19px;
+    text-transform:capitalize;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgb(34, 103, 16) ;
+}
+.p1{
+    width: 15px;
+    height: 20px;
+    color: white;
+    background-color: rgb(95, 91, 21);
+    border-radius: 50%;
+    margin-left: -10px;
+    text-align: center;
+    font-size: 17px;
+}
+.h2 h2{
+    padding: 160px 95px;
+    font-size: 50px;
+    text-transform: capitalize;
+}
+.h2 .btn1{
+    width: 100px;
+    height: 30px;
+    text-transform: capitalize;
+    margin-top: -100px;
+    margin-left: 100px;
+}
+.img1{
+    width: 400px;
+    height: 300px;
+    margin-top: 80px;
+    border-radius: 50%;
+    background-size: 100% 100%;
+}
+/*////////////////////////////////////////////////////////////////////////////*/
+.sc2{
+    width: 100%;
+    height: 130vh;
+}
+.h3{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    font-size: 30px;
+}
+.h3-div{
+    width: 100px;
+    height: 3px;
+    background-color:rgb(34, 103, 16);
+    margin: auto;
+    margin-top: 10px;
+    transition: .5s;
+}
+.special:hover .h3-div{
+    width: 150px;
+    transition: .5S;
+}
+.container2{
+    position: relative;
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-column-gap: 10px;
+    width: 80%;
+    height: 50vh;
+    margin: auto;
+    margin-top: 20px;
+}
+.div1{
+    width:100%;
+    height: 50vh;
+}
+.img2{
+    width: 100%;
+    height: 70%;
+    border-radius:40px 20px ;
+}
+.p3{
+    margin-top: 20px;
+    margin-left: 5px;
+    font-size: 19px;
+    text-transform:capitalize;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgb(34, 103, 16) ;
+}
+.pp{
+    margin-top: 0px;
+}
+.i2{
+    margin-top: -25px;
+    margin-left: 260px;
+    font-size: 30px;
+    background-color: rgb(50, 111, 31);
+    color: white;
+    padding: 0px 5px;
+    visibility: hidden;
+}
+.div1:hover .i2{
+    visibility: visible;
+}
+.par{
+    width: 80%;
+    height: 40vh;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-column-gap: 10px;
+    z-index: 5;
+}
+.mm{
+    overflow: auto;
+    background:-webkit-linear-gradient(left,rgb(243, 251, 242),rgb(202, 181, 112)) ;
+}
+.i3{
+    font-size: 50px;
+    margin-left: 20px;
+    float: left;
+    margin-top: 10px;
+}
+.h4{
+    float: left;
+    font-size: 30px;
+   margin-top: 15px;
+   font-family: Arial, Helvetica, sans-serif;
+   text-transform: capitalize;
+   margin-left: 10px;
+}
+.p4{
+    float: left;
+    margin-top: 45px;
+    margin-left: -180px;
+    font-size: 20px;
+}
+.p5{
+    font-size: 19px;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-top: 100px;
+    padding: 0px 20px;
+    line-height: 25px;
+}
+.line{
+    float: left;
+    width: 50px;
+    height: 2px;
+    margin: 0px 5px;
+    margin-top: 55px;
+    background-color: black;
+}
+.nn{
+    margin-left: 420px;
+}
+.div3{
+    width: 95%;
+    background-image: url(../images/day\ date.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 40px 20px;
+    transition: 1s;
+}
+.div3:hover{
+    transform: scale(1.1,1.1);
+    transition: 1s;
+}
+.p6{
+    color:rgb(0, 0, 0);
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 15px 20px;
+    text-transform: capitalize;
+}
+.f{
+    margin-top: -10px;
+}
+.container3{
+    width: 80%;
+    height: 20vh;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-column-gap: 5px;
+}
+.div4{
+    position: relative;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+.i4{
+    font-size: 30px;
+    padding-top: 30px;
+    color: rgb(56, 56, 56);
+    transition: .5s;
+}
+.div5,.div6{
+    margin-top:-2px ;
+    transition:.5s;
+    z-index: -1;
+}
+.div6{
+    position: absolute;
+    inset: 0;
+    transform: translate(0%,100%);
+}
+.div4:hover .div5{
+    transform: translate(0%,-100%);
+}
+.div4:hover .div6{
+    transform: translate(0%,0%);
+}
+.aa{
+    color: rgb(147, 147, 147);
+}
+.div7{
+    overflow: hidden;
+    height: 100px;
+    background-color: white;
+}
+.p7{
+    padding-top: 10px;
+}
+.p8{
+    color: rgb(175, 174, 174);
+}
+.line2{
+    width:1px;
+    height: 90px;
+    position: absolute;
+    background-color: black;
+    margin-top: -80px;
+}
+.ll{
+    width: .5px;
+}
+.hr1{
+    width: 80%;
+    margin: auto;
+}
+/*///////////////////////////////////////////////////////////////////*/
+.uu{
+    margin-top: -60px;
+    margin-left:460px;
+}
+.container4{
+    position: relative;
+    width: 80%;
+    margin: auto;
+    margin-top: -50px;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-column-gap: 68px;
+    grid-row-gap: 35px;
+}
+.div8{
+    position: relative;
+    width: 350px;
+    height: 450px;
+}
+.div8 .i5{
+    margin-top: 15px;
+    color: yellow;
+}
+.p9,.p10{
+    margin-top: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.card1,.front,.back{
+    width: inherit;
+    height: 350px;
+    transition: .5s;
+}
+.mohamed{
+    width: 100%;
+    height: 350px;
+    position: absolute;
+    background-image: url(../images/airking2.jpg);
+    background-size: 100% 100%;
+    transform: rotateY(90deg);
+    transition: .3s;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    opacity: .7;
+}
+.div8:hover .mohamed{
+    transform: rotateY(180deg);
+}
+.icons-mo{
+    display: flex;
+    width: 210px;
+    height: 30px;
+    position: absolute;
+    margin-top: -180px;
+    margin-left: 70px;
+    transform: rotateY(90deg);
+    font-size: 30px;
+    text-align: center;
+    z-index: 3;
+    visibility: hidden;
+    transition: .3s;
+}
+.icons-mo i{
+    width: 150%;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(225, 220, 205);
+    padding-top: 5px;
+    margin-left: 10px;
+    transform: rotateY(180deg);
+}
+.div8:hover .icons-mo{
+    visibility: visible;
+    transform: rotateY(180deg);
+}
+.card1{
+    position: relative;
+}
+.front,.back{
+    position: absolute;
+}
+.front{
+    z-index: 1;
+    backface-visibility: hidden;
+    background-image: url(../images/air3.jpg);
+    background-size: 100% 100%;
+}
+.card1:hover{
+    transition: .5s;
+}
